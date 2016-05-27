@@ -1,0 +1,16 @@
+body {background: #008080
+}
+
+h2 {
+  color: #c0c0c0;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+#story {
+  font-size: 25px;
+}
+
+.game {
+  font-size: 20px;
+}
