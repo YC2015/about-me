@@ -6,9 +6,9 @@ if (qOne === "y" || qOne === "yes") {
   console.log ("Nope, we should talk more.");
 }
 
- var qTwo = confirm("I would like to go to Northern Washington.");
+ var qTwo = prompt("I would like to go to Northern Washington.").toLowerCase();
 
-if (qTwo === true){
+if (qTwo === "y" || qThree === "yes"){
     console.log ("The sooner the better too!");
 } else {
     console.log ("It's important information.");
@@ -28,4 +28,20 @@ if (qFour === "y" || qFour === "yes") {
   console.log ("Yup, that's right!");
 } else {
   console.log ("Nope. I definitely am interested in labor.");
+}
+
+var aFive = 6;
+var qFive = parseInt(prompt("How many states have I visited?"));
+var i = 0;
+
+while (qFive !== aFive && i < 3){
+      if (qFive < aFive){
+        console.log("Too low");
+        alert("Too low . Try again.");
+      } else {
+        console.log("Too high. Try again.");
+        alert("Too high");
+      }
+      i++;
+    qFive = parseInt(prompt("How many states have I visited?"));
 }
