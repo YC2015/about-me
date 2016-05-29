@@ -37,9 +37,9 @@ var i = 0;
 while (qFive !== aFive && i < 3){
       if (qFive < aFive){
         console.log("Too low");
-        alert("Too low . Try again.");
+        alert("Too low. Guess again.");
       } else {
-        console.log("Too high. Try again.");
+        console.log("Too high. Guess again.");
         alert("Too high");
       }
       i++;
