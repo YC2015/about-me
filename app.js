@@ -1,4 +1,4 @@
-/*var qOne = prompt('Hi, my name is Yamile isn\'t it?').toLowerCase();
+var qOne = prompt('Hi, my name is Yamile isn\'t it?').toLowerCase();
 
 if (qOne === "y" || qOne === "yes") {
   console.log ("Yup, that\'s right!");
@@ -44,7 +44,7 @@ while (qFive !== aFive && i < 3){
       }
       i++;
     qFive = parseInt(prompt("How many states have I visited?"));
-}*/
+}
 
 var qSix = prompt(" Which states have I lived in?");
 var correctSix = ["California", "Washington"];
@@ -68,7 +68,3 @@ a--;
 }
 
 alert ("I have lived in California and Washington");
-
-
-
-    
