@@ -1,70 +1,115 @@
-var qOne = prompt('Hi, my name is Yamile isn\'t it?').toLowerCase();
 
-if (qOne === "y" || qOne === "yes") {
-  console.log ("Yup, that\'s right!");
-} else {
-  console.log ("Nope, we should talk more.");
-}
 
- var qTwo = prompt("I would like to go to Northern Washington.").toLowerCase();
-
-if (qTwo === "y" || qThree === "yes"){
-    console.log ("The sooner the better too!");
-} else {
-    console.log ("It's important information.");
-}
-
-var qThree = prompt("Do I have 5 sisters?").toLowerCase();
-
-if (qThree === "n" || qThree === "no") {
-  console.log ("That's correct. Wish I had more sisters and brothers.");
-} else {
-  console.log ("That's wrong. I have one sister and one brother.");
+//Question 1
+function questionOne(){
+  var question = prompt('Hi, my name is Yamile isn\'t it?').toLowerCase();
+  if (question === 'y' || question === 'yes') {
+    console.log ('Yup, that\'s right!');
+  } else {
+    console.log ('No, we should talk more.');
   }
-
-var qFour = prompt ("Am I interested in labor patterns?").toLowerCase();
-
-if (qFour === "y" || qFour === "yes") {
-  console.log ("Yup, that's right!");
-} else {
-  console.log ("Nope. I definitely am interested in labor.");
 }
 
-var aFive = 6;
-var qFive = parseInt(prompt("How many states have I visited?"));
-var i = 0;
+questionOne();
 
-while (qFive !== aFive && i < 3){
-      if (qFive < aFive){
-        console.log("Too low");
-        alert("Too low. Guess again.");
-      } else {
-        console.log("Too high. Guess again.");
-        alert("Too high");
-      }
-      i++;
-    qFive = parseInt(prompt("How many states have I visited?"));
+//Question 2
+function questionTwo(){
+  var question = prompt('I would like to go to Northern Washington.').toLowerCase();
+
+  if (question === 'y' || question === 'yes'){
+    console.log ('That\'s right. The sooner the better too!');
+  } else {
+    console.log ('It\'s important information.');
+  }
 }
 
-var qSix = prompt(" Which states have I lived in?");
-var correctSix = ["California", "Washington"];
-var a = 5;
+questionTwo();
 
-while (a >0) {
+//Question 3
+function questionThree(){
+  var question = prompt('Do I have 5 sisters?').toLowerCase();
 
-  for (var i=0; i <correctSix.length; i++) {
-      if (qSix === correctSix[i]){
-        console.log ("right");
+  if (question === 'n' || question === 'no') {
+    console.log ('That\'s correct. Wish I had more sisters and brothers.');
+  } else {
+    console.log ('Nope. I have one sister and one brother.');
+  }
+}
+
+questionThree();
+
+//Question 4
+function questionFour(){
+  var question = prompt ('Am I interested in labor patterns?').toLowerCase();
+
+  if (question === 'y' || question === 'yes') {
+    console.log ('Yup, that\'s right!');
+  } else {
+    console.log ('Nope. I definitely am interested in labor.');
+  }
+}
+
+questionFour();
+
+//Question 5
+function questionFive(){
+  var question = prompt('Do you like donuts?').toLowerCase();
+
+  if (question === 'y' || question === 'yes' ) {
+    console.log ('Nope.');
+  } else {
+    console.log ('That\'s right!');
+  }
+}
+
+questionFive();
+
+
+//Question 6
+function questionSix(){
+  var answer = 6;
+  var question = parseInt(prompt('How many states have I visited?'));
+  var b = 0;
+
+  while (question !== answer && b < 3){
+    if (question < answer){
+      console.log('Too low');
+      alert('Too low. Guess again.');
+    } else {
+      console.log('Too high. Guess again.');
+      alert('Too high');
+    }
+    b++;
+    question = parseInt(prompt('How many states have I visited?'));
+  }
+}
+
+questionSix();
+
+//Question 7
+function questionSeven() {
+  var question = prompt('Which states have I lived in?');
+  var correct = ['California', 'Washington'];
+  var a = 5;
+
+  while (a > 0){
+
+    for (var i = 0; i < correct.length; i++){
+      if (question === correct[i]){
+        console.log ('right');
         break;
       }
+    }
+
+    if (question !== correct[i]){
+      console.log ('Wrong. Try again.');
+      alert ('Wrong. Try again.');
+      question = prompt('Which states have I lived in?');
+    }
+    a--;
   }
 
-  if (qSix !== correctSix[i]){
-    console.log ("Wrong. Try again");
-    alert ("Wrong. Try again.")
-    qSix = prompt(" Which states have I lived in?");
-  }
-a--;
+  alert ('I have lived in California and Washington');
 }
 
-alert ("I have lived in California and Washington");
+questionSeven();
