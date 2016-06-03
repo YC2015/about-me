@@ -45,3 +45,26 @@ while (qFive !== aFive && i < 3){
       i++;
     qFive = parseInt(prompt("How many states have I visited?"));
 }
+
+var qSix = prompt(" Which states have I lived in?");
+var correctSix = ["California", "Washington"];
+var a = 5;
+
+while (a >0) {
+
+  for (var i=0; i <correctSix.length; i++) {
+      if (qSix === correctSix[i]){
+        console.log ("right");
+        break;
+      }
+  }
+
+  if (qSix !== correctSix[i]){
+    console.log ("Wrong. Try again");
+    alert ("Wrong. Try again.")
+    qSix = prompt(" Which states have I lived in?");
+  }
+a--;
+}
+
+alert ("I have lived in California and Washington");
