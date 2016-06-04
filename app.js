@@ -4,7 +4,7 @@
 function questionOne(){
   var question = prompt('Hi, my name is Yamile isn\'t it?').toLowerCase();
   if (question === 'y' || question === 'yes') {
-    console.log ('Yup, that\'s right!');
+    console.log ('That\'s right!');
   } else {
     console.log ('No, we should talk more.');
   }
@@ -14,10 +14,10 @@ questionOne();
 
 //Question 2
 function questionTwo(){
-  var question = prompt('I would like to go to Northern Washington.').toLowerCase();
+  var question = prompt('I would like to go to Northern Washington. Is this true?').toLowerCase();
 
   if (question === 'y' || question === 'yes'){
-    console.log ('That\'s right. The sooner the better too!');
+    console.log ('That\'s right! The sooner the better too!');
   } else {
     console.log ('It\'s important information.');
   }
@@ -30,7 +30,7 @@ function questionThree(){
   var question = prompt('Do I have 5 sisters?').toLowerCase();
 
   if (question === 'n' || question === 'no') {
-    console.log ('That\'s correct. Wish I had more sisters and brothers.');
+    console.log ('That\'s right! Wish I had more sisters and brothers.');
   } else {
     console.log ('Nope. I have one sister and one brother.');
   }
@@ -43,7 +43,7 @@ function questionFour(){
   var question = prompt ('Am I interested in labor patterns?').toLowerCase();
 
   if (question === 'y' || question === 'yes') {
-    console.log ('Yup, that\'s right!');
+    console.log ('That\'s right!');
   } else {
     console.log ('Nope. I definitely am interested in labor.');
   }
@@ -82,6 +82,12 @@ function questionSix(){
     b++;
     question = parseInt(prompt('How many states have I visited?'));
   }
+
+  if (question === answer){
+    console.log ('That\s right!');
+  } else {
+    console.log ('Your ran out of guess. I have lived in 6 different states');
+  }
 }
 
 questionSix();
@@ -96,7 +102,7 @@ function questionSeven() {
 
     for (var i = 0; i < correct.length; i++){
       if (question === correct[i]){
-        console.log ('right');
+        console.log ('That\'s right!');
         break;
       }
     }
