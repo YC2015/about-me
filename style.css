@@ -4,13 +4,13 @@ body {background: #008080
 h2 {
   color: #c0c0c0;
   font-size: 40px;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
 h3 {
   color: #c0c0c0;
   font-size: 30px;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
 .list {
