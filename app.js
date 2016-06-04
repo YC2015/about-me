@@ -1,10 +1,11 @@
-
+var score = 0;
 
 //Question 1
 function questionOne(){
   var question = prompt('Hi, my name is Yamile isn\'t it?').toLowerCase();
   if (question === 'y' || question === 'yes') {
     console.log ('That\'s right!');
+    score += 1;
   } else {
     console.log ('No, we should talk more.');
   }
@@ -18,6 +19,7 @@ function questionTwo(){
 
   if (question === 'y' || question === 'yes'){
     console.log ('That\'s right! The sooner the better too!');
+    score += 1;
   } else {
     console.log ('It\'s important information.');
   }
@@ -31,6 +33,7 @@ function questionThree(){
 
   if (question === 'n' || question === 'no') {
     console.log ('That\'s right! Wish I had more sisters and brothers.');
+    score += 1;
   } else {
     console.log ('Nope. I have one sister and one brother.');
   }
@@ -44,6 +47,7 @@ function questionFour(){
 
   if (question === 'y' || question === 'yes') {
     console.log ('That\'s right!');
+    score += 1;
   } else {
     console.log ('Nope. I definitely am interested in labor.');
   }
@@ -53,12 +57,13 @@ questionFour();
 
 //Question 5
 function questionFive(){
-  var question = prompt('Do you like donuts?').toLowerCase();
+  var question = prompt('Do I like donuts?').toLowerCase();
 
   if (question === 'y' || question === 'yes' ) {
-    console.log ('Nope.');
+    console.log ('Nope, but my behavior says otherwise.');
   } else {
     console.log ('That\'s right!');
+    score += 1;
   }
 }
 
@@ -78,6 +83,7 @@ function questionSix(){
     } else {
       console.log('Too high. Guess again.');
       alert('Too high');
+      numberofrightAnswers + 1;
     }
     b++;
     question = parseInt(prompt('How many states have I visited?'));
@@ -85,8 +91,9 @@ function questionSix(){
 
   if (question === answer){
     console.log ('That\s right!');
+    score += 1;
   } else {
-    console.log ('Your ran out of guess. I have lived in 6 different states');
+    console.log ('You ran out of guess. I have lived in 6 different states');
   }
 }
 
@@ -94,7 +101,7 @@ questionSix();
 
 //Question 7
 function questionSeven() {
-  var question = prompt('Which states have I lived in?');
+  var question = prompt('Guess a state I have lived in.');
   var correct = ['California', 'Washington'];
   var a = 5;
 
@@ -103,6 +110,7 @@ function questionSeven() {
     for (var i = 0; i < correct.length; i++){
       if (question === correct[i]){
         console.log ('That\'s right!');
+        score += 1;
         break;
       }
     }
@@ -119,3 +127,5 @@ function questionSeven() {
 }
 
 questionSeven();
+
+console.log(score);
