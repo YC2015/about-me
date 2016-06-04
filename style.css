@@ -1,26 +1,41 @@
-body {background: #008080
+body {background: #003333;
 }
 
 h2 {
   color: #c0c0c0;
   font-size: 40px;
   font-family: sans-serif;
+  float: left;
+  margin: 200px;
+  padding: 3px;
+  height: 600px;
+  text-align: center;
 }
 
 h3 {
   color: #c0c0c0;
-  font-size: 30px;
+  font-size: 20px;
   font-family: sans-serif;
 }
 
 .list {
-  font-size: 25px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#intro {
+font-size: 20px;
+font-family: sans-serif;
+
 }
 
 #story {
-  font-size: 25px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: 669999
 }
 
 .game {
   font-size: 20px;
+  font-family: sans-serif;
 }
